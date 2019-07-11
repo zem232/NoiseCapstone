@@ -18,13 +18,12 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	margin: auto;
-	width: 50%;
+	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-}
+	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2192,7 +2191,7 @@ input, select, textarea {
 			display: inline-block;
 			height: 0.2em;
 			max-width: 20em;
-			width: 50%;
+			width: 75%;
 		}
 
 	footer.major {
@@ -3479,6 +3478,7 @@ input, select, textarea {
 			content: '';
 			display: block;
 			height: 100%;
+			left: 0;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3490,7 +3490,7 @@ input, select, textarea {
 			max-width: 95%;
 			padding: 6em;
 			position: relative;
-			text-align: center;
+			text-align: right;
 			vertical-align: middle;
 			z-index: 1;
 		}
