@@ -2159,6 +2159,11 @@ input, select, textarea {
 		margin: 0 0 1.5em 0;
 	}
 
+	header h1 {
+		font-size: 1.3em;
+		justify-content: center;
+	}
+
 	header h2 + p {
 		font-size: 1.25em;
 		margin-top: -1em;
@@ -2183,6 +2188,7 @@ input, select, textarea {
 		margin: 0 0 4em 0;
 		position: relative;
 		text-align: center;
+		justify: center;
 	}
 
 		header.major:after {
