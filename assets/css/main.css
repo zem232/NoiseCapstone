@@ -1,6 +1,23 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
+
+
+/* Create columns for dashboard */
+.column-left {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+
+.column-right {
+  float: right;
+  width: 80%;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
@@ -2515,12 +2532,25 @@ input, select, textarea {
 
 /* Image */
 
+
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+ .bg {
+   max-width: 80%;
+   max-height: 80%;
+
+ }
 	.image {
 		border-radius: 4px;
-		border: 0;
+		border: 10;
 		display: inline-block;
 		position: relative;
 		overflow: hidden;
+    max-width: 80%;
+    max-height: 80%;
 	}
 
 		.image:before {
@@ -2538,6 +2568,10 @@ input, select, textarea {
 		.image img {
 			border-radius: 4px;
 			display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+
 		}
 
 		.image.left {
@@ -2563,7 +2597,12 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 100%;
+      max-width:100%;
+      max-height:100%;
+      padding: 0;
+       display: block;
+       margin: 0 auto;
+
 		}
 
 			.image.fit img {
@@ -3074,10 +3113,14 @@ input, select, textarea {
 
 		.spotlight .image.main {
 			display: none;
+      max-width: 80%;
+      max-height: 80%;
 		}
 
 			.spotlight .image.main img {
-				position: relative;
+				position: float;
+        max-width: 80%;
+        max-height: 80%;
 			}
 
 		.spotlight .content {
@@ -3394,17 +3437,22 @@ input, select, textarea {
 
 		#header h1 {
 			height: inherit;
-			left: 1.25em;
+			left: 0em;
 			line-height: inherit;
 			margin: 0;
-			position: absolute;
+			position: fixed;
 			top: 0;
+      background-color: #272833;
+      width:30%
 		}
 
 		#header nav {
-			position: absolute;
-			right: 1em;
+			position: fixed;
+			right: 0em;
 			top: 0;
+      background-color: #272833;
+      width: 70%;
+      text-align: right;
 		}
 
 			#header nav ul {
@@ -3457,8 +3505,7 @@ input, select, textarea {
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+    background-image: url(images/depnoiseresponse.png);
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3496,7 +3543,7 @@ input, select, textarea {
 			max-width: 95%;
 			padding: 6em;
 			position: relative;
-			text-align: right;
+			text-align: center;
 			vertical-align: middle;
 			z-index: 1;
 		}
@@ -3506,8 +3553,12 @@ input, select, textarea {
 				vertical-align: middle;
 			}
 
+      #banner .content header h1 {
+        font-size: 2.7em;
+        margin: .5em;
+      }
 				#banner .content header h2 {
-					font-size: 2.5em;
+					font-size: 2.3em;
 					margin: 0;
 				}
 
@@ -3675,7 +3726,7 @@ input, select, textarea {
 				.spotlight .image.main {
 					display: block;
 					margin: 0;
-					max-height: 40vh;
+					max-height: 80%;
 					overflow: hidden;
 				}
 
@@ -3818,7 +3869,9 @@ input, select, textarea {
 			}
 
 				.spotlight .image.main {
-					max-height: 60vh;
+          max-width: 80%;
+
+          max-height: 80%;
 				}
 
 				.spotlight .content {
@@ -4078,7 +4131,8 @@ input, select, textarea {
 		/* Spotlight */
 
 			.spotlight .image.main {
-				max-height: 50vh;
+        max-width: 80%;
+        max-height: 80%;
 			}
 
 			.spotlight .content {
