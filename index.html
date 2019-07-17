@@ -92,49 +92,60 @@ In recent years, the growing volume of noise complaints in New York City has inc
 							</header>
 						</div>
 						<div class="col-4 col-12-medium">
-							<p>There is no immediate relief from noise as a direct result of lodging a complaint with 311,
-								as the two enforcement agencies NYPD and DEP both reported that less than 30% of noise complaints could be verified and enforced.</p>
+
 						</div>
 						<div class="col-4 col-12-medium">
-							<p>The primary motivation of this project is to provide a technological approach to improve the current state of affairs. More specifically, the main goal is to showcase—visually, on a map in real time—areas where there are higher probabilities of verifying noise complaints so resources can be directed to such areas at the discretion of the inspector coordinator. </p>
+							<ul class="actions">
+								<li><a href="https://www1.nyc.gov/site/dep/environment/noise-code.page" class="button">NYC Noise Code</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<a href="#probStatement" class="goto-next scrolly">Next</a>
+				<a href="#DEPresponse" class="goto-next scrolly">Next</a>
 		</section>
 
-		<div class="content">
-				<div class="bg"><img src="images/pasted image 0.png" ></div>
-
-			</div>
 		</div>
 
-		<!-- Problem Statement -->
+		<!-- DEP Response-->
 
-		<section id="probStatement" class="spotlight style2 right">
-
-			<div class="content">
+		<section id="DEPresponse" class="spotlight style1 right">
+		<span class="image fit main"><img src="images/depnoiseresponse2.png" alt="" />
+		</span>
+			<div class="content" id='probS'>
 				<header>
-					<h2>DEP's Response to Noise</h2>
-					<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+					<h2>Current DEP Response</h2>
+					<p>There is no immediate relief from noise as a direct result of lodging a complaint with 311,
+						as the two enforcement agencies NYPD and DEP both reported that less than 30% of noise complaints could be verified and enforced.</p>
 				</header>
 				<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
 				<ul class="actions">
-					<li><a href="https://www1.nyc.gov/site/dep/environment/noise-code.page" class="button">NYC Noise Code</a></li>
+					<li><a href="images/depnoiseresponse2.png" class="button">Enlarge Image</a></li>
 				</ul>
 			</div>
-			<a href="#methodology" class="goto-next scrolly">Next</a>
+			<a href="#probStatement" class="goto-next scrolly">Next</a>
 		</section>
-		<div class="bg"><img src="images/depnoiseresponse.png" ></div>
 
+		<!-- Problem Statement -->
+
+		<section id="probStatement" class="spotlight style2 bottom">
+			<span class="image fit main"><img src="images/pic04.jpg"alt="" />
+		</span>
+		<div class="content" id='probS'>
+			<header>
+				<h2>Problem Statement</h2>
+		<p>The primary motivation of this project is to provide a technological approach to improve the current state of affairs. More specifically, the main goal is to showcase—visually, on a map in real time—areas where there are higher probabilities of verifying noise complaints so resources can be directed to such areas at the discretion of the inspector coordinator. </p>
+	</header>
+		</div>
+		<a href="#methodology" class="goto-next scrolly">Next</a>
+	</section>
 
 		<!-- Methodology  -->
-		<section id="methodology" class="spotlight style3 left">
+		<section id="methodology" class="spotlight style3 right">
 			<div class="image fit main bottom"><img src="images/pic04.jpg" alt="" ></div>
 			<div class="content">
 				<header>
-					<h2>Our Approach: Prediction</h2>
+					<h2>Prediction</h2>
 					<h3>LSTM Neural Network</h3>
 				</header>
 				<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
@@ -162,54 +173,60 @@ In recent years, the growing volume of noise complaints in New York City has inc
 
 
 		<!-- Results  -->
-		<section id="results" class="main style1 dark fullscreen">
+	<!--	<section id="results" class="main style1 dark fullscreen"> -->
+
+			<section id="intro" class="spotlight style1 bottom">
+				<div class="content">
+
 			<header>
 				<h2>Results</h2>
-				<p>Prediction: Neural Network</p>
-			</header>
+				<h3>Prediction: Neural Network</h3>
+				<p>sdfsdf</p>
 
-			<div class="content">
-				<div class="column-left">
-					<header>
-						<h2>Results</h2>
-						<p>Prediction: Neural Network</p>
+				<h2>Results</h2>
+				<p>Heatmap</p>
 					</header>
-				</div>
-				<div class='column-right'>
-					<div class='tableauPlaceholder' id='viz1563125301871' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DE&#47;DEPDashboard&#47;HeatMap&#47;1_rss.png'
-									style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-							<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-							<param name='embed_code_version' value='3' />
-							<param name='site_root' value='' />
-							<param name='name' value='DEPDashboard&#47;HeatMap' />
-							<param name='tabs' value='no' />
-							<param name='toolbar' value='yes' />
-							<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DE&#47;DEPDashboard&#47;HeatMap&#47;1.png' />
-							<param name='animate_transition' value='yes' />
-							<param name='display_static_image' value='yes' />
-							<param name='display_spinner' value='yes' />
-							<param name='display_overlay' value='yes' />
-							<param name='display_count' value='yes' /></object></div>
-					<script type='text/javascript'>
-						var divElement = document.getElementById('viz1563125301871');
-						var vizElement = divElement.getElementsByTagName('object')[0];
-						if (divElement.offsetWidth > 800) {
-							vizElement.style.width = '100%';
-							vizElement.style.height = '900px';
-						} else if (divElement.offsetWidth > 500) {
-							vizElement.style.width = '100%';
-							vizElement.style.height = '850px';
-						} else {
-							vizElement.style.width = '100%';
-							vizElement.style.height = '1977px';
-						}
-						var scriptElement = document.createElement('script');
-						scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-						vizElement.parentNode.insertBefore(scriptElement, vizElement);
-					</script>
-				</div>
-				<a href="#conclusion" class="goto-next scrolly">Next</a>
+</div>
 		</section>
+
+<!--- Tableau --->
+	<div class = 'tableauBox'>
+		<div class='tableauPlaceholder' id='viz1563125301871' style='position: relative; width: 100%;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DE&#47;DEPDashboard&#47;HeatMap&#47;1_rss.png'
+						style='border: none' /></a></noscript><object class='tableauViz' width='100%' style='display:none;'>
+				<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+				<param name='embed_code_version' value='3' />
+				<param name='site_root' value='' />
+				<param name='name' value='DEPDashboard&#47;HeatMap' />
+				<param name='tabs' value='no' />
+				<param name='toolbar' value='yes' />
+				<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DE&#47;DEPDashboard&#47;HeatMap&#47;1.png' />
+				<param name='animate_transition' value='yes' />
+				<param name='display_static_image' value='yes' />
+				<param name='display_spinner' value='yes' />
+				<param name='display_overlay' value='yes' />
+				<param name='display_count' value='yes' /></object></div>
+		<script type='text/javascript'>
+			var divElement = document.getElementById('viz1563125301871');
+			var vizElement = divElement.getElementsByTagName('object')[0];
+			if (divElement.offsetWidth > 800) {
+				vizElement.style.width = '100%';
+				vizElement.style.height = '900px';
+			} else if (divElement.offsetWidth > 500) {
+				vizElement.style.width = '100%';
+				vizElement.style.height = '850px';
+			} else {
+				vizElement.style.width = '100%';
+				vizElement.style.height = '1977px';
+			}
+			var scriptElement = document.createElement('script');
+			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+			vizElement.parentNode.insertBefore(scriptElement, vizElement);
+		</script>
+
+	</div>
+</div>
+<a href="#conclusion" class="goto-next scrolly">Next</a>
+
 
 		<!-- Conclusion  -->
 		<section id="conclusion" class="main style1 dark fullscreen">

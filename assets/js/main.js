@@ -155,7 +155,7 @@
 						if ($this.hasClass('top')) {
 
 							mode = 'top';
-							top = '-20%';
+							top = '-100%';
 							bottom = 0;
 
 						}
@@ -248,3 +248,12 @@
 			._parallax();
 
 })(jQuery);
+
+
+
+// When the user clicks on div, open the popup
+$(document).ready(function(){
+  $(".showtableau").click(function(){
+    $(".tableauPlaceholder").toggle();
+  });
+});
