@@ -2,16 +2,31 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
 
-
-/* Create columns for dashboard */
-.column-left {
+/* Create columns for descriptions */
+.box-left {
   float: left;
-  width: 20%;
-  padding: 10px;
+  width: 50%;
+  padding-left: 60px;
+}
+.box-right {
+  float: right;
+  width: 50%;
+  padding-left: 60px;
   /*height: 800px; /* Should be removed. Only for demonstration */
 }
 
-
+/* Create columns for dashboard */
+.dashboard-left {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+.dashboard-right {
+  float: right;
+  width: 80%;
+  padding: 5px;
+  /*height: 800px; /* Should be removed. Only for demonstration */
+}
 
 /*
 	Landed by HTML5 UP
@@ -2171,6 +2186,11 @@ section, summary, time, mark, audio, video {
   		margin: 0 0 1.5em 0;
   	}
 
+    header h1 {
+  		font-size: 1.3em;
+  		justify-content: center;
+  	}
+
   	header h2 + p {
   		font-size: 1.25em;
   		margin-top: -1em;
@@ -2874,9 +2894,7 @@ section, summary, time, mark, audio, video {
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
-		height: 3em;
-		line-height: 3em;
-		padding: 0 2.25em;
+		padding: 1.0em 2.0em;
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
@@ -3102,8 +3120,8 @@ section, summary, time, mark, audio, video {
 
 		.spotlight .image.main {
 			display: none;
-      max-width: 80%;
-      max-height: 80%;
+      max-width: 100%;
+      max-height: 100%;
 		}
 
 			.spotlight .image.main img {
@@ -3714,7 +3732,7 @@ section, summary, time, mark, audio, video {
 				.spotlight .image.main {
 					display: block;
 					margin: 0;
-					max-height: 80%;
+					max-height: 100%;
 					overflow: hidden;
 				}
 
@@ -3857,9 +3875,9 @@ section, summary, time, mark, audio, video {
 			}
 
 				.spotlight .image.main {
-          max-width: 80%;
+          max-width: 100%;
 
-          max-height: 80%;
+          max-height: 100%;
 				}
 
 				.spotlight .content {

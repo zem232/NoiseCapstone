@@ -24,7 +24,6 @@
 			<h1 id="logo"><a href="index.html">Optimizing Noise Response</a></h1>
 			<nav id="nav">
 				<ul>
-					<li><a href="index.html" class="button primary">Home</a></li>
 					<li>
 						<a href="#">Background</a>
 						<ul>
@@ -33,16 +32,25 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">Our Work</a>
+						<a href="#">Phase 1</a>
 						<ul>
-							<li><a href="#methodology">Methodology</a></li>
-							<li><a href="#results">Results</a></li>
+							<li><a href="#prediction">Prediction</a></li>
+							<li><a href="#clustering">Optimization</a></li>
+							<li><a href="#clientFeed">Client Feedback</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Phase 2</a>
+						<ul>
+							<li><a href="#heatmap">Heatmap</a></li>
+							<li><a href="#prioritization">Prioritization</a></li>
+							<li><a href="#clientFeed2">Client Feedback</a></li>
+							<li><a href="#dashboard">Interactive Dashboard</a></li>
 						</ul>
 					</li>
 					<li><a href="#conclusion">Conclusion</a></li>
 					<li><a href="#authors">Authors</a></li>
 					<li><a href="#credits">Credits</a></li>
-					<li>    </li>
 				</ul>
 			</nav>
 		</header>
@@ -136,63 +144,139 @@ In recent years, the growing volume of noise complaints in New York City has inc
 				<h2>Problem Statement</h2>
 		<p>The primary motivation of this project is to provide a technological approach to improve the current state of affairs. More specifically, the main goal is to showcase—visually, on a map in real time—areas where there are higher probabilities of verifying noise complaints so resources can be directed to such areas at the discretion of the inspector coordinator. </p>
 	</header>
-		</div>
-		<a href="#methodology" class="goto-next scrolly">Next</a>
+
+		<h2>Our Approach</h2>
+		<p>In the exploratory phase of this project, we were mostly interested in understanding noise complaints in New York City and identifying different factors that contribute to noise complaints.
+			This lead us
+
+<div class ='box-left'>
+		<ul class="actions">
+			<li><a href="#prediction" class="button"><img src='images/prediction.png'></a></li>
+		</ul>
+</div>
+<div class = 'box-right'>
+	<ul class="actions">
+		<li><a href="#clustering" class="button"><img src='images/optimization.png'></a></li>
+	</ul>
+</div>
+</div>
+
 	</section>
 
-		<!-- Methodology  -->
-		<section id="methodology" class="spotlight style3 right">
-			<div class="image fit main bottom"><img src="images/pic04.jpg" alt="" ></div>
+		<!-- Prediction  -->
+		<section id="prediction" class="spotlight style3 left">
 			<div class="content">
 				<header>
 					<h2>Prediction</h2>
-					<h3>LSTM Neural Network</h3>
+					<h3>Random Forest Decision Tree</h3>
+					<h2></h2>
 				</header>
-				<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+
+			</div>
+			<a href="#lstm" class="goto-next scrolly">Next</a>
+		</section>
+
+
+
+		<section id="lstm" class="spotlight style3 right">
+			<div class="image fit main bottom"><img src="images/LSTM_Autoencoder_Result.png" alt="" ></div>
+			<div class="content">
+				<header>
+
+					<h3>LSTM Neural Network</h3>
+					<h5>LSTM as an Undercomplete Autoencoder</h5>
+					<p>An autoencoder neural network was used to model a spatiotemporal forecasting system for DEP noise complaint volume. The top image shows that the model succeeds in learning the periodicity of data, but fail to predict high-variational volume. In order to mitigate a severe penalization on a single random onset, as well as to reformulate the question such that the prediction can serve as an actionable insight to DEP, the Softmax function was added to the top of the network to convert predictions to pseudo probability. Using computed pseudo-probability as the rank of the neighborhood, the model’s performance was calculated as Precision at k accuracy, where the correctness of the membership in the top-ranked neighborhoods compared to the true membership computed from the ranking of the corresponding day.</p>
+				</header>
 
 			</div>
 		</section>
 
-		<!-- Optimization  -->
-		<section id="optimization" class="spotlight style3 left">
+		<!-- Clustering  -->
+		<section id="clustering" class="spotlight style3 left">
 			<div class="content">
 				<header>
-					<h2>Our Approach: Optimization</h2>
+					<h2>Optimization</h2>
 					<h3>Clustering with STDBSCAN</h3>
 					<h2></h2>
 				</header>
 
-
-				<header>
-					<h3>Optimization with Heatmaps</h3>
-				</header>
-				<p>Heatmap</p>
 			</div>
-			<a href="#results" class="goto-next scrolly">Next</a>
+			<a href="#clientFeed" class="goto-next scrolly">Next</a>
 		</section>
 
-
-		<!-- Results  -->
+		<!-- Client Feedback #1 -->
 	<!--	<section id="results" class="main style1 dark fullscreen"> -->
 
-			<section id="intro" class="spotlight style1 bottom">
+			<section id="clientFeed" class="spotlight style1 bottom">
 				<div class="content">
 
 			<header>
-				<h2>Results</h2>
+				<h2>Sponsor Feedback</h2>
 				<h3>Prediction: Neural Network</h3>
 				<p>sdfsdf</p>
 
-				<h2>Results</h2>
-				<p>Heatmap</p>
 					</header>
 </div>
+<a href="#prioritization" class="goto-next scrolly">Next</a>
+
 		</section>
 
-<!--- Tableau --->
-	<div class = 'tableauBox'>
-		<div class='tableauPlaceholder' id='viz1563125301871' style='position: relative; width: 100%;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DE&#47;DEPDashboard&#47;HeatMap&#47;1_rss.png'
-						style='border: none' /></a></noscript><object class='tableauViz' width='100%' style='display:none;'>
+		<!-- Prioritization -->
+
+			<section id="prioritization" class="spotlight style1 bottom">
+				<div class="content">
+
+			<header>
+				<h2>Prioritization</h2>
+				<h3>Supervised Learning of complaint priority with Random Forest Model</h3>
+				<p>sdfsdf</p>
+
+					</header>
+</div>
+<a href="#heatmap" class="goto-next scrolly">Next</a>
+
+		</section>
+
+		<!-- Heatmap  -->
+		<section id="heatmap" class="main style1 dark fullscreen">
+			<div class="content">
+				<header>
+					<h2>Heatmap</h2>
+				</header>
+				<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+			</div>
+			<a href="#clientFeed2" class="goto-next scrolly">Next</a>
+		</section>
+
+
+		<!-- Client Feedback #2  -->
+		<section id="clientFeed2" class="main style1 dark fullscreen">
+			<div class="content">
+				<header>
+					<h2>Sponsor Feedback </h2>
+				</header>
+				<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+			</div>
+			<a href="#dashboard" class="goto-next scrolly">Next</a>
+		</section>
+
+
+
+		<!-- Dashboard -->
+			<section id="dashboard" class="main style1 dark fullscreen">
+				<div class="content">
+
+			<header>
+				<h2>Interactive Dashboard</h2>
+					</header>
+				</div>
+
+	<div class = 'dashboard-left'>
+
+	</div>
+	<div class = 'dashboard-right'>
+		<div class='tableauPlaceholder' id='viz1563125301871' style='position: relative; width: 80%;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DE&#47;DEPDashboard&#47;HeatMap&#47;1_rss.png'
+						style='border: none' /></a></noscript><object class='tableauViz' width='80%' style='display:none;'>
 				<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
 				<param name='embed_code_version' value='3' />
 				<param name='site_root' value='' />
@@ -216,7 +300,7 @@ In recent years, the growing volume of noise complaints in New York City has inc
 				vizElement.style.height = '850px';
 			} else {
 				vizElement.style.width = '100%';
-				vizElement.style.height = '1977px';
+				vizElement.style.height = '1277px';
 			}
 			var scriptElement = document.createElement('script');
 			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -225,20 +309,19 @@ In recent years, the growing volume of noise complaints in New York City has inc
 
 	</div>
 </div>
-<a href="#conclusion" class="goto-next scrolly">Next</a>
+<a href="#authors" class="goto-next scrolly">Next</a>
+</section>
 
-
-		<!-- Conclusion  -->
-		<section id="conclusion" class="main style1 dark fullscreen">
-			<div class="content">
-				<header>
-					<h2>Conclusion</h2>
-					<p>Prediction: Neural Network</p>
-				</header>
-				<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-			</div>
-			<a href="#authors" class="goto-next scrolly">Next</a>
-		</section>
+<!-- Conclusion  -->
+<section id="conclusion" class="wrapper style1 special fade-up">
+	<div class="content">
+		<header>
+			<h2>Conclusion</h2>
+		</header>
+		<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+	</div>
+	<a href="#authors" class="goto-next scrolly">Next</a>
+</section>
 
 		<!-- About the Authors -->
 		<section id="authors" class="wrapper style1 special fade-up">
