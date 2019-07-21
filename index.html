@@ -96,13 +96,13 @@ In recent years, the growing volume of noise complaints in New York City has inc
 					<div class="row">
 						<div class="col-4 col-12-medium">
 							<header>
-								<h2>Noise in New York City</h2>
-								<p>Yes, New York is a noisy city.</br></p>
+								<h2>Yes, New York is a noisy city.</h2>
 							</header>
 								The noise code was created to reduce the excessive and unreasonable noises
 									within the city.
-									The city's noise handling mechanism is primarily complaint-based, where residents register a complaint via the 311 hotline.
-									Afterwards, the complaint is handled by either NYPD or NYC DEP.</br></br>
+									The city's enforcement of the noise code is primarily complaint-based.
+									Residents register a complaint via the 311 hotline
+									and the complaint is directed to either the NYPD or NYC DEP.</br></br>
 								<ul class="actions">
 									<li><a href="https://portal.311.nyc.gov/" class="button">NYC 311</a></li>
 									<li><a href="https://www1.nyc.gov/site/dep/environment/noise-code.page" class="button">NYC Noise Code</a></li>
@@ -171,28 +171,71 @@ In recent years, the growing volume of noise complaints in New York City has inc
 		<p>The primary motivation of this project is to provide a technological approach to:
 		<ul>
 			<li>Reduce the response time to noise complaints</li>
-			<li>Prioritize complaints as to increase the enforcement of the noise code</li>
-			<li> (or to improve the efficiency and success of inspections)</li>
-		</ul>
+			<li>Prioritize complaints as to improve enforcement of the noise code</li>
+		</ul></p>
 	</header>
 
 
 
 		<h2>Data Exploration</h2>
-		<p>In the exploratory phase of this project, we were mostly interested in understanding noise complaints in New York City and identifying different factors that contribute to noise complaints.
-			Based off of literature review and discussion with domain experts and our sponsor, we selected the following data sources as
+		<div class = 'box-list'>
+			<p>Based off of literature review and discussion with domain experts and our sponsor, we selected the following data sources to explore in relation to noise complaints.
+</p></div>
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:transparent;">
+    AHV Construction Permits
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:transparent;">
+    Census Demographic
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:transparent;">
+    PLUTO
+  </div>
+	<div class="column" onclick="openTab('b4');" style="background:transparent;">
+		Weather
+	</div>
+	<div class="column" onclick="openTab('b5');" style="background:transparent;">
+		311 Noise Complaints
+	</div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>DOB Construction & After-Hour Variance Permits</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Census Demographic Data</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>PLUTO Data</h2>
+	<img src="images/Descriptorss.jpeg" alt="" >
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b4" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Weather Data</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b5" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>311 Noise Complaints</h2>
+	<img src="images/Descriptorss.jpeg" alt="" >
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
 </div>
 </section>
 
-<section id="dataexplore" class="spotlight style3 right">
-	<div class="image fit main bottom"><img src="images/Descriptorss.jpeg" alt="" ></div>
-	<div class="content">
-		<header>
-
-			<h3>Pluto</h3>
-	</header>
-	</div>
-</section>
+<!-- Our Approach  -->
 
 <section id="approach" class="wrapper style1 special fade-up">
 		<div class="container" >
@@ -200,6 +243,10 @@ In recent years, the growing volume of noise complaints in New York City has inc
 				<h2>Our Approach</h2>
 			<p> To accomplish this goal, we were faced with the choice of optimizing current schedules or future schedules.</p>
 		</header>
+	</div>
+</section>
+
+<section id="clientFeed2" class="main style1 dark fullscreen">
 <div class ='box-left'>
 		<ul class="actions">
 			<li><a href="#prediction" class="button"><img src='images/prediction.png'></a></li>
@@ -210,8 +257,6 @@ In recent years, the growing volume of noise complaints in New York City has inc
 		<li><a href="#clustering" class="button"><img src='images/optimization.png'></a></li>
 	</ul>
 </div>
-</div>
-
 	</section>
 
 		<!-- Prediction  -->
@@ -227,14 +272,20 @@ In recent years, the growing volume of noise complaints in New York City has inc
 
 
 
-		<section id="lstm" class="spotlight style3 right">
+		<section id="lstm" class="spotlight style3 left">
 			<div class="image fit main bottom"><img src="images/lstm.png" alt="" ></div>
 			<div class="content">
 				<header>
+					<h2>Prediction</h2>
+					<h3>Using supervised learning to predict complaints.</h3>
+
 
 					<h3>LSTM Neural Network</h3>
 					<h5>LSTM as an Undercomplete Autoencoder</h5>
-					<p>An autoencoder neural network was used to model a spatiotemporal forecasting system for DEP noise complaint volume. The top image shows that the model succeeds in learning the periodicity of data, but fail to predict high-variational volume. In order to mitigate a severe penalization on a single random onset, as well as to reformulate the question such that the prediction can serve as an actionable insight to DEP, the Softmax function was added to the top of the network to convert predictions to pseudo probability. Using computed pseudo-probability as the rank of the neighborhood, the model’s performance was calculated as Precision at k accuracy, where the correctness of the membership in the top-ranked neighborhoods compared to the true membership computed from the ranking of the corresponding day.</p>
+					<p>An autoencoder neural network was used to model a spatiotemporal forecasting system for DEP noise complaint volume.
+						The top image shows that the model succeeds in learning the periodicity of data, but fail to predict high-variational volume.
+						In order to mitigate a severe penalization on a single random onset, as well as to reformulate the question such that the prediction can serve as an actionable insight to DEP,
+						the Softmax function was added to the top of the network to convert predictions to pseudo probability. Using computed pseudo-probability as the rank of the neighborhood, the model’s performance was calculated as Precision at k accuracy, where the correctness of the membership in the top-ranked neighborhoods compared to the true membership computed from the ranking of the corresponding day.</p>
 				</header>
 				<ul class="actions">
 					<li><a href="images/LSTM_Autoencoder_Result.png" class="button">Enlarge Image</a></li>
@@ -243,10 +294,12 @@ In recent years, the growing volume of noise complaints in New York City has inc
 		</section>
 
 		<!-- Clustering  -->
-		<section id="clustering" class="spotlight style3 left">
+		<section id="clustering" class="spotlight style3 right">
+			<span class="image fit main"><img src="images/clusters.gif" alt="" /></span>
 			<div class="content">
 				<header>
 					<h2>Optimization</h2>
+					<h3>Using unsupervised learning to identify clusters of complaints with high priority.</h3>
 					<h3>Clustering with STDBSCAN</h3>
 					<h2></h2>
 				</header>
@@ -326,8 +379,8 @@ In recent years, the growing volume of noise complaints in New York City has inc
 
 	</div>
 	<div class = 'dashboard-right'>
-		<div class='tableauPlaceholder' id='viz1563125301871' style='position: relative; width: 80%;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DE&#47;DEPDashboard&#47;HeatMap&#47;1_rss.png'
-						style='border: none' /></a></noscript><object class='tableauViz' width='80%' style='display:none;'>
+		<div class='tableauPlaceholder' id='viz1563125301871' style='position: relative; width: 100%;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DE&#47;DEPDashboard&#47;HeatMap&#47;1_rss.png'
+						style='border: none' /></a></noscript><object class='tableauViz' width='100%' style='display:none;'>
 				<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
 				<param name='embed_code_version' value='3' />
 				<param name='site_root' value='' />
