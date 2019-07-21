@@ -20,12 +20,15 @@
   float: left;
   width: 20%;
   padding: 5px;
+  height: 900px; /* Should be removed. Only for demonstration */
+
 }
 .dashboard-right {
   float: right;
   width: 80%;
   padding: 5px;
-  /*height: 800px; /* Should be removed. Only for demonstration */
+  height: 900px; /* Should be removed. Only for demonstration */
+
 }
 
 /*
@@ -3448,7 +3451,7 @@ section, summary, time, mark, audio, video {
 			margin: 0;
 			position: fixed;
 			top: 0;
-      background-color: #272833;
+      background-image: linear-gradient(#5e5656, #a37472);
       width:30%
 		}
 
@@ -3456,7 +3459,7 @@ section, summary, time, mark, audio, video {
 			position: fixed;
 			right: 0em;
 			top: 0;
-      background-color: #272833;
+      background-image: linear-gradient(#5e5656, #a37472);
       width: 70%;
       text-align: right;
 		}
@@ -3511,7 +3514,6 @@ section, summary, time, mark, audio, video {
 
 	#banner {
 		background-attachment: fixed;
-    background-image: url(images/depnoiseresponse.png);
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);

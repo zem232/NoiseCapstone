@@ -11,7 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="icon" href="https://cdn0.iconfinder.com/data/icons/iconsweets2/40/sound_speaker_volume.png">
+	<link rel="icon" href="http://www.myiconfinder.com/uploads/iconsets/256-256-e887e7e9e3b674806603ae858b092192.png">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -72,7 +72,8 @@
 					<h3>	<a href='http://cusp.nyu.edu/'>Center for Urban Science & Progress, New York University</a></br>
 					<a href='https://www1.nyc.gov/site/dep/index.page'>New York City Department of Environmental Protection</a></br></br></br>
 In recent years, the growing volume of noise complaints in New York City has increased response times and hindered enforcement of the city’s noise code by the Department of Environmental Protection.
-					In this Capstone project, we used supervised learning to assign complaint priority in order to optimize response
+					In this Capstone project, we used supervised learning to assign complaint priority and produced a heatmap showing areas of complaint priority
+					in order to optimize response
 						to noise complaints.</h3>
 
 		<!---		<h4><i>Capstone Summary</i></h4>
@@ -96,16 +97,42 @@ In recent years, the growing volume of noise complaints in New York City has inc
 						<div class="col-4 col-12-medium">
 							<header>
 								<h2>Noise in New York City</h2>
-								<p>Yes, New York is a noisy city.</p>
+								<p>Yes, New York is a noisy city.</br></p>
 							</header>
+								The noise code was created to reduce the excessive and unreasonable noises
+									within the city.
+									The city's noise handling mechanism is primarily complaint-based, where residents register a complaint via the 311 hotline.
+									Afterwards, the complaint is handled by either NYPD or NYC DEP.</br></br>
+								<ul class="actions">
+									<li><a href="https://portal.311.nyc.gov/" class="button">NYC 311</a></li>
+									<li><a href="https://www1.nyc.gov/site/dep/environment/noise-code.page" class="button">NYC Noise Code</a></li>
+								</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-
-						</div>
-						<div class="col-4 col-12-medium">
-							<ul class="actions">
-								<li><a href="https://www1.nyc.gov/site/dep/environment/noise-code.page" class="button">NYC Noise Code</a></li>
+						</br></br>
+							<h3>NYPD</h3>
+							<p>The New York Polic Department (NYPD) handles noise complaints involving people to people interactions.
+								<ul>
+									<li>Clubs or Bars</li>
+									<li>Parks</li>
+									<li>Stores or businesses</li>
+									<li>Streets or sidewalks</li>
+									<li>Vehicles</li>
 							</ul>
+							</p>
+						</div>
+						<div class="col-4 col-12-medium">
+						</br></br>
+							<h3>NYC DEP</h3>
+							<p>New York City Department of Environmental Protection (NYC DEP) handles complaints relating to equipment or repeating noise.
+								<ul>
+									<li>Construction</li>
+									<li>Pets and Animals</li>
+									<li>Food vending vehicles</li>
+									<li>Air conditioners</li>
+									<li>Motor vehicles</li>
+							</ul>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -120,13 +147,14 @@ In recent years, the growing volume of noise complaints in New York City has inc
 		<section id="DEPresponse" class="spotlight style1 right">
 		<span class="image fit main"><img src="images/depnoiseresponse2.png" alt="" />
 		</span>
-			<div class="content" id='probS'>
+			<div class="content">
 				<header>
-					<h2>Current DEP Response</h2>
-					<p>There is no immediate relief from noise as a direct result of lodging a complaint with 311,
-						as the two enforcement agencies NYPD and DEP both reported that less than 30% of noise complaints could be verified and enforced.</p>
+					<h2>Complaint Response</h2>
+					<p>Noise complaints have increased by 20% since 2014.
+						Enforcement of the noise code has been hampered due to inability to handle sheer volumes.</p>
 				</header>
-				<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+				<p>In 2018, the DEP could not verify noise was occuring in 55% of noise complaints. </p>
+					<p>As illustrated in the image, at any given time in 2018 there were 300 to 900 open complaints.</p>
 				<ul class="actions">
 					<li><a href="images/depnoiseresponse2.png" class="button">Enlarge Image</a></li>
 				</ul>
@@ -136,19 +164,42 @@ In recent years, the growing volume of noise complaints in New York City has inc
 
 		<!-- Problem Statement -->
 
-		<section id="probStatement" class="spotlight style2 bottom">
-			<span class="image fit main"><img src="images/pic04.jpg"alt="" />
-		</span>
-		<div class="content" id='probS'>
-			<header>
+<section id="probStatement" class="wrapper style1 special fade-up">
+		<div class="container" >
+			<header class='major'>
 				<h2>Problem Statement</h2>
-		<p>The primary motivation of this project is to provide a technological approach to improve the current state of affairs. More specifically, the main goal is to showcase—visually, on a map in real time—areas where there are higher probabilities of verifying noise complaints so resources can be directed to such areas at the discretion of the inspector coordinator. </p>
+		<p>The primary motivation of this project is to provide a technological approach to:
+		<ul>
+			<li>Reduce the response time to noise complaints</li>
+			<li>Prioritize complaints as to increase the enforcement of the noise code</li>
+			<li> (or to improve the efficiency and success of inspections)</li>
+		</ul>
 	</header>
 
-		<h2>Our Approach</h2>
-		<p>In the exploratory phase of this project, we were mostly interested in understanding noise complaints in New York City and identifying different factors that contribute to noise complaints.
-			This lead us
 
+
+		<h2>Data Exploration</h2>
+		<p>In the exploratory phase of this project, we were mostly interested in understanding noise complaints in New York City and identifying different factors that contribute to noise complaints.
+			Based off of literature review and discussion with domain experts and our sponsor, we selected the following data sources as
+</div>
+</section>
+
+<section id="dataexplore" class="spotlight style3 right">
+	<div class="image fit main bottom"><img src="images/Descriptorss.jpeg" alt="" ></div>
+	<div class="content">
+		<header>
+
+			<h3>Pluto</h3>
+	</header>
+	</div>
+</section>
+
+<section id="approach" class="wrapper style1 special fade-up">
+		<div class="container" >
+			<header class='major'>
+				<h2>Our Approach</h2>
+			<p> To accomplish this goal, we were faced with the choice of optimizing current schedules or future schedules.</p>
+		</header>
 <div class ='box-left'>
 		<ul class="actions">
 			<li><a href="#prediction" class="button"><img src='images/prediction.png'></a></li>
@@ -164,12 +215,10 @@ In recent years, the growing volume of noise complaints in New York City has inc
 	</section>
 
 		<!-- Prediction  -->
-		<section id="prediction" class="spotlight style3 left">
-			<div class="content">
-				<header>
-					<h2>Prediction</h2>
-					<h3>Random Forest Decision Tree</h3>
-					<h2></h2>
+		<section id="prediction" class="wrapper style1 special fade-up">
+					<div class="container" >
+						<header class='major'>
+
 				</header>
 
 			</div>
@@ -179,7 +228,7 @@ In recent years, the growing volume of noise complaints in New York City has inc
 
 
 		<section id="lstm" class="spotlight style3 right">
-			<div class="image fit main bottom"><img src="images/LSTM_Autoencoder_Result.png" alt="" ></div>
+			<div class="image fit main bottom"><img src="images/lstm.png" alt="" ></div>
 			<div class="content">
 				<header>
 
@@ -187,7 +236,9 @@ In recent years, the growing volume of noise complaints in New York City has inc
 					<h5>LSTM as an Undercomplete Autoencoder</h5>
 					<p>An autoencoder neural network was used to model a spatiotemporal forecasting system for DEP noise complaint volume. The top image shows that the model succeeds in learning the periodicity of data, but fail to predict high-variational volume. In order to mitigate a severe penalization on a single random onset, as well as to reformulate the question such that the prediction can serve as an actionable insight to DEP, the Softmax function was added to the top of the network to convert predictions to pseudo probability. Using computed pseudo-probability as the rank of the neighborhood, the model’s performance was calculated as Precision at k accuracy, where the correctness of the membership in the top-ranked neighborhoods compared to the true membership computed from the ranking of the corresponding day.</p>
 				</header>
-
+				<ul class="actions">
+					<li><a href="images/LSTM_Autoencoder_Result.png" class="button">Enlarge Image</a></li>
+				</ul>
 			</div>
 		</section>
 
@@ -309,17 +360,18 @@ In recent years, the growing volume of noise complaints in New York City has inc
 
 	</div>
 </div>
-<a href="#authors" class="goto-next scrolly">Next</a>
+<a href="#conclusion" class="goto-next scrolly">Next</a>
 </section>
 
 <!-- Conclusion  -->
 <section id="conclusion" class="wrapper style1 special fade-up">
-	<div class="content">
-		<header>
+	<div class="container">
+		<header class='major'>
 			<h2>Conclusion</h2>
 		</header>
-		<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-	</div>
+<p>Our main goal was to
+	Based off of our research and feedback from the sponsors, we came to the conclusion that the best way to accomplish this is to showcase—visually, on a map in real time—areas where there are higher probabilities of verifying noise complaints so resources can be directed to such areas at the discretion of the inspector coordinator. </p>
+</div>
 	<a href="#authors" class="goto-next scrolly">Next</a>
 </section>
 
@@ -336,33 +388,32 @@ In recent years, the growing volume of noise complaints in New York City has inc
 							<span>
 							<img src='images/duke-yang-2019.png' class='avatar' alt='Avatar'></span>
 							<h3>Sung Hoon Yang</br><a href="https://github.com/sunghoonyang/" class="icon brands alt fa-github"><span class="label"></span></a>
-								<a href="mailto:zem232@nyu.edu" class="icon solid alt fa-envelope"><span class="label"></span></a>
+								<a href="mailto:shy256@nyu.edu" class="icon solid alt fa-envelope"><span class="label"></span></a>
 								<a href="https://www.linkedin.com/in/sunghoonyang90/" class="icon brands alt fa-linkedin"><span class="label"></span></a>
 							</h3><p>Worked on building a forecasting model for DEP noise complaints using PyTorch.</p>
 						</section>
 						<section class="col-4 col-6-medium col-12-xsmall">
 				<span>
 							<img src="images/WhatsApp Image 2019-07-13 at 2.56.37 PM.jpeg" class = 'avatar' alt="Avatar"></span>
-							<h3>Qinyu Goh</br><a href="https://github.com/zem232/" class="icon brands alt fa-github"><span class="label"></span></a>
-								<a href="mailto:zem232@nyu.edu" class="icon solid alt fa-envelope"><span class="label"></span></a>
-								<a href="https://www.linkedin.com/in/siddhanth-shetty-19b365152/" class="icon brands alt fa-linkedin"><span class="label"></span></a>
+							<h3>Qinyu Goh</br><a href="https://github.com/qygoh/" class="icon brands alt fa-github"><span class="label"></span></a>
+								<a href="mailto:qg412@nyu.edu" class="icon solid alt fa-envelope"><span class="label"></span></a>
 							</h3><p>Qinyu Goh is an aspiring urban data scientist who loves a good adventure.</p>
 						</section>
 						<section class="col-4 col-6-medium col-12-xsmall">
 							<span>
 							<img src='images/WhatsApp Image 2019-07-12 at 10.16.44 AM.jpeg' class='avatar' alt='Avatar'></span>
-							<h3>Sam Ovenshine</br><a href="https://github.com/zem232/" class="icon brands alt fa-github"><span class="label"></span></a>
-								<a href="mailto:zem232@nyu.edu" class="icon solid alt fa-envelope"><span class="label"></span></a>
+							<h3>Sam Ovenshine</br><a href="https://github.com/sgo230/" class="icon brands alt fa-github"><span class="label"></span></a>
+								<a href="mailto:sgo230@nyu.edu" class="icon solid alt fa-envelope"><span class="label"></span></a>
 								<a href="https://www.linkedin.com/in/sam-ovenshine-9289605b/" class="icon brands alt fa-linkedin"><span class="label"></span></a></h3>
 							<p>Sam studied economics at Occidental College and currently works in data at Zocdoc, a healthcare technology startup.</p>
 						</section>
 						<section class="col-4 col-6-medium col-12-xsmall">
 							<span>
-							<img src='images/WhatsApp Image 2019-07-12 at 10.16.44 AM.jpeg' class='avatar' alt='Avatar'></span>
-							<h3>Siddhanth Shetty</br><a href="https://github.com/zem232/" class="icon brands alt fa-github"><span class="label"></span></a>
-								<a href="mailto:zem232@nyu.edu" class="icon solid alt fa-envelope"><span class="label"></span></a>
+							<img src='images/sidphoto.jpeg' class='avatar' alt='Avatar'></span>
+							<h3>Siddhanth Shetty</br><a href="https://github.com/sds695/" class="icon brands alt fa-github"><span class="label"></span></a>
+								<a href="mailto:sds695@nyu.edu" class="icon solid alt fa-envelope"><span class="label"></span></a>
 								<a href="https://www.linkedin.com/in/siddhanth-shetty-19b365152/" class="icon brands alt fa-linkedin"><span class="label"></span></a>
-								</h3> <p>Sidd's bio</p>
+							</h3> <p>With experience as a business analyst, business operations and urban planning intern, I look forward to the challenges in working with different data and expanding my skills as a data scientist.</p>
 						</section>
 						<section class="col-4 col-6-medium col-12-xsmall">
 							<span>
