@@ -3565,7 +3565,7 @@ section, summary, time, mark, audio, video {
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		min-height: 100vh;
+		min-height: 80vh;
 		position: relative;
 		text-align: center;
 		z-index: 21;
@@ -3597,7 +3597,7 @@ section, summary, time, mark, audio, video {
 			display: inline-block;
 			margin-right: 1%;
 			max-width: 95%;
-			padding: 6em;
+			padding: 4em;
 			position: relative;
 			text-align: center;
 			vertical-align: middle;
@@ -3610,11 +3610,11 @@ section, summary, time, mark, audio, video {
 			}
 
       #banner .content header h1 {
-        font-size: 2.7em;
-        margin: .5em;
+        font-size: 2.4em;
+        margin: .3em;
       }
 				#banner .content header h2 {
-					font-size: 2.3em;
+					font-size: 2.0em;
 					margin: 0;
 				}
 
@@ -3751,7 +3751,7 @@ section, summary, time, mark, audio, video {
 		/* Banner */
 
 			#banner .content {
-				padding: 4.5em;
+				padding: 1.5em;
 			}
 
 		/* Footer */
@@ -4206,7 +4206,7 @@ section, summary, time, mark, audio, video {
 		/* Banner */
 
 			#banner .content {
-				padding: 3em 1.5625em 5.25em 1.5625em;
+				padding: 1em 1.5625em 3.25em 1.5625em;
 			}
 
 		/* Footer */
