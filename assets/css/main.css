@@ -61,13 +61,13 @@
 .dashboard-left {
   float: left;
   width: 10%;
-  height: 930px; /* Should be removed. Only for demonstration */
+/*  height: 930px; /* Should be removed. Only for demonstration */
 
 }
 .dashboard-right {
   float: right;
   width: 90%;
-  height: 930px; /* Should be removed. Only for demonstration */
+/*  height: 930px; /* Should be removed. Only for demonstration */
 }
 
 /*
