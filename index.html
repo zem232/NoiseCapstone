@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Noise</title>
+	<title>Noise Capstone for NYCDEP</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -141,7 +141,7 @@ In recent years, the growing volume of noise complaints in New York City has inc
 		<!-- DEP Response-->
 
 		<section id="DEPresponse" class="spotlight style1 right">
-		<span class="image fit main"><img src="images/depnoiseresponse2.png" alt="" />
+		<span class="image fit main"><img src="images/complaintvolume.png" alt="" />
 		</span>
 			<div class="content">
 				<header>
@@ -149,10 +149,8 @@ In recent years, the growing volume of noise complaints in New York City has inc
 					<p>Noise complaints have increased by 20% since 2014.
 						Enforcement of the noise code has been hampered due to inability to handle sheer volumes.</p>
 				</header>
-				<p>In 2018, the DEP could not verify noise was occuring in 55% of noise complaints. </p>
-				<ul class="actions">
-					<li><a href="images/depnoiseresponse2.png" class="button">Enlarge Graph</a></li>
-				</ul>
+				<h4>In 2018, the DEP could not verify noise was occuring in 55% of noise complaints. </h4>
+
 				<a href="#probStatement" class="goto-next scrolly">Next</a>
 
 			</div>
@@ -180,25 +178,25 @@ In recent years, the growing volume of noise complaints in New York City has inc
 <!-- Three columns -->
 <div class="row">
   <div class="column" onclick="openTab('b1');" style="background:transparent;">
-    AHV Construction Permits
+    <h3>AHV Construction Permits</h3>
   </div>
   <div class="column" onclick="openTab('b2');" style="background:transparent;">
-    Census Demographic
+	<h3>Census Demographic</h3>
   </div>
   <div class="column" onclick="openTab('b3');" style="background:transparent;">
-    PLUTO
+    <h3>Land Use Data</h3>
   </div>
 	<div class="column" onclick="openTab('b4');" style="background:transparent;">
-		Weather
+		<h3>Weather</h3>
 	</div>
 	<div class="column" onclick="openTab('b5');" style="background:transparent;">
-		311 Noise Complaints
+		<h3>311 Noise Complaints</h3>
 	</div>
 </div>
 
 <!-- Full-width columns: (hidden by default) -->
 <div id="b1" class="containerTab"
-style="display:none;background-image:url(images/pic04.jpg);background-repeat:repeat-y;">
+style="display:none;background-image:url(images/pic06.jpg);background-repeat:repeat-y;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>DOB Construction & After-Hour Variance Permits</h2>
 <p>Existing literature found that neighborhood noise complaints are significantly associated with major constructions.
@@ -206,13 +204,13 @@ style="display:none;background-image:url(images/pic04.jpg);background-repeat:rep
 and <a href='-	https://www1.nyc.gov/site/buildings/business/after-hours-variances.page'>After Hour Variance (AHV)</a> were selected as a proxy to construction location and construction noise. DOB permits was found to be a bad proxy for construction noise and noise code enforceability. Sponsors highlighted that the presence of AHV in the vicinity of a noise complaint tend to increase enforceability based on field experience. </p>
 </div>
 
-<div id="b2" class="containerTab" style="display:none;background-image:url(images/pic05.jpg);">
+<div id="b2" class="containerTab" style="display:none;background-image:url(images/pic07.jpg);">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Census Demographic Data</h2>
 <p>High frequency of 311 noise complaints have been found to be positively correlated to Lower Manhattan’s high income and education demographic feature. A geographically weighted regression analysis did not find any relationship between demographic features and ACS Survey and complaint time. </p>
 </div>
 
-<div id="b3" class="containerTab" style="display:none;background-image:url(images/pic07.jpg);">
+<div id="b3" class="containerTab" style="display:none;background-image:url(images/pic03.jpg);">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Land Use Data</h2>
 	<div class='image-div'><img src="images/Descriptors.jpeg" alt="" ></div>
@@ -238,36 +236,24 @@ and <a href='-	https://www1.nyc.gov/site/buildings/business/after-hours-variance
 
 
 				<h2>Our Approach</h2>
-			<p> To accomplish this goal, we were faced with the choice of optimizing <b>current schedules</b> or <b>future schedules.</b></p>
-<div class ='box-left'>
+			<h3> To accomplish our goal, we explored the following methods:</b></h3>
+<div class='box-list'>
 		<ul class="actions">
-			<li><a href="#prediction" class="button"><img src='images/prediction.png'></a></li>
+			<li>
+				<a href="#prediction" class="button"><h2>PREDICTION</h2>
+			<h4>Use <b>supervised</b> learning to </br>optimize <b>future</b> scheduling.</h4></a></li>
+			<li>
+				<a href="#clustering" class="button"><h2>OPTIMIZATION</h2>
+			<h4>Use <b>supervised</b> learning </br>to optimize <b>current</b> scheduling.</h4></a></li>
 		</ul>
-</div>
-<div class = 'box-right'>
-	<ul class="actions">
-		<li><a href="#clustering" class="button"><img src='images/optimization.png'></a></li>
-	</ul>
 </div>
 	</section>
 
-		<!-- Prediction  -->
-		<section id="prediction" class="wrapper style1 special fade-up">
-					<div class="container" >
-						<header class='major'>
-
-				</header>
-
-			</div>
-			<a href="#lstm" class="goto-next scrolly">Next</a>
-		</section>
 
 
-
+<!--- PREDCTION ---->
 		<section id="lstm" class="spotlight style3 left">
 			<div id='lstmintro' class="image fit main bottom"><img id='LSTM' src="http://jdeed.info/img/a3.jpg" alt="" ></div>
-			<div id='lstmmodel' class="image fit main bottom"><img id='LSTM' src="http://jdeed.info/img/a3.jpg" alt="" ></div>
-			<div id='lstmresults' class="image fit main bottom"><img id='LSTM' src="http://jdeed.info/img/a3.jpg" alt="" ></div>
 			<div class="content">
 				<header>
 					<h2>Prediction</h2>
@@ -287,22 +273,34 @@ and <a href='-	https://www1.nyc.gov/site/buildings/business/after-hours-variance
 			</div>
 		</section>
 
+
 		<!-- Clustering  -->
 		<section id="clustering" class="spotlight style3 right">
 			<span class="image fit main"><img src="images/clusters.gif" alt="" /></span>
 			<div class="content">
 				<header>
 					<h2>Optimization</h2>
-					<h3>Predicting priority with Random Forest</h3>
-					<h3>Supervised Learning of complaint priority with Random Forest Model</h3>
-
-					<p>To optimize the inspector's response to current backlog of open complaints, we
+					<h3>Using unsupervised learning to cluster complaints</h3>
+					<p>To optimize the inspector's response to current backlog of open complaints, we originally
 						used the ST-DBSCAN method to cluster complaints within fixed temporal and spatial constraints.
 					</br>
-					A priority score was assigned to each cluster which is a function of the size of the cluster and the probability that
-						a violation can be issued during a scheduled shift. </p>
+					With discussion with the spinsors, we discovered that an interactive heat map for visualiation was preferred over this clustering method.
 				</header>
 				<a href="#clientFeed" class="goto-next scrolly">Next</a>
+			</div>
+		</section>
+
+
+<!--- RANDOM FOREST --->
+		<section id="priority" class="spotlight style3 left">
+			<div id='lstmintro' class="image fit main bottom"><img id='LSTM' src="http://jdeed.info/img/a3.jpg" alt="" ></div>
+			<div class="content">
+				<header>
+					<h2>Optimization</h2>
+					<h3>Classifying Priority with Random Forest</h3>
+					<p>We trained a random forest classifier on 311 complaint outcomes from 2016 and tested on July 2019 complaints. A probability score was assigned to each complaint based on its likelihood of enforcement. We optimized for model recall based on sponsor preference.
+					</br>In evaluation, the model precision was 9.3% and recall was 91.1%.</p>
+				</header>
 			</div>
 		</section>
 
@@ -313,10 +311,9 @@ and <a href='-	https://www1.nyc.gov/site/buildings/business/after-hours-variance
 			<div class="container" >
 				<header>
 				<h2>Sponsor Feedback</h2>
-				<h3>Presented the two options of prediction or optimization to sponsors on June , 2019
-					and they prefered us to focus on clustering.</h3>
-				<h3>Clustering and interactive visualization</h3>
-				<h3>AHV Permits</h3>
+				<h4>To ensure our project aligned with DEP’s priorities, we met every 1-2 months with our sponsors, consisting of DEP inspectors and managers. In summer 2019, we presented our neural network and our binary classification models. DEP chose the classification model to use due to its ability to be leveraged in real time, its potential to reduce response time, and its greater usefulness to everyday inspector operations.
+					<br>
+					Sponsor feedback shaped every aspect of the project. For example, DEP requested that information about after-hours construction be added to the model, so we wrote a web scraper to get the data and feed it to the random forest classifier. DEP was previously using a basic heatmap to show noise complaints; we built a full interactive visualization to surface complaints, including their modeled probabilities. Inspectors picked out the dashboard filters and the metrics that are useful to them.</h4>
 
 					</header>
 </div>
@@ -381,12 +378,13 @@ and <a href='-	https://www1.nyc.gov/site/buildings/business/after-hours-variance
 		<header class='major'>
 			<h2>Conclusion</h2>
 		</header>
-<p>Our main goal was to develop a data-driven appraoch to optimize the DEP's scheduling of noise complaint inspections.
+		<div class='box-list'>
+<h3>Our main goal was to develop a data-driven approach to optimize the DEP's scheduling of noise complaint inspections.
 The two methods which we explored were to optimize the response to the current backlog of open complaints by prioritization,
 as well as optimizing future scheduling with prediction.
 	Based off of our research and feedback from the sponsors, we determined that optimizing the response to current complaints
-	by visualizing priorities of current complaint backlog on a heatmap is the most useful and practical approach. </p>
-</div>
+	by visualizing priorities of current complaint backlog on a heatmap is the most useful and practical approach. </h3>
+</div></div>
 	<a href="#authors" class="goto-next scrolly">Next</a>
 </section>
 
@@ -462,8 +460,8 @@ as well as optimizing future scheduling with prediction.
 				<div class="box alt">
 					<div class="row gtr-uniform">
 						<section class="col-4 col-6-medium col-12-xsmall">
-							<span class="icon solid alt major fa-chart-area"></span>
-							<h3>Charlie Mydlarz</h3>
+							<span>
+							<img src='images/Charlie.jpeg' class='avatar' alt='Avatar'></span>							<h3>Charlie Mydlarz</h3>
 							<p>I am a Senior Research Scientist at NYU’s Center for Urban Science and Progress (CUSP), the Music and Audio Research Laboratory (MARL), and an Engineering Lead in the NYU Immersive Audio Group.</p>
 						</section>
 						<section class="col-4 col-6-medium col-12-xsmall">
@@ -473,7 +471,8 @@ as well as optimizing future scheduling with prediction.
 							<p>Vincent Lostanlen is a postdoctoral researcher affiliated to the Cornell Lab of Ornithology, and is currently visiting both the MARL and NYU’s Center for Urban Science and Progress (CUSP). </p>
 						</section>
 						<section class="col-4 col-6-medium col-12-xsmall">
-							<span class="icon solid alt major fa-chart-area"></span>
+							<span>
+							<img src='images/Mark.jpeg' class='avatar' alt='Avatar'></span>
 							<h3>Mark Cartwright</h3>
 							<p>Mark Cartwright is Brooklyn-based computer scientist and musician. He is currently a Research Assistant Professor in NYU’s Department of Computer Science and Engineering with affiliations to NYU’s Music and Audio Research Lab and the Center for Urban Science and Progress.</p>
 						</section>

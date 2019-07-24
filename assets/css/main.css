@@ -6,15 +6,15 @@
 .column {
   float: center;
   width: 20%;
-  margin: 0 auto;
   text-align: center;
-  font-size: 20px;
   cursor: pointer;
   color: white;
+  margin-bottom: 0.2em;
 }
 
 .column:hover {
-  outline: 1px solid red;
+  color: red;
+  outline-color: red;
 }
 
 .containerTab {
@@ -2592,8 +2592,8 @@ section, summary, time, mark, audio, video {
 }
 
  .bg {
-   max-width: 80%;
-   max-height: 80%;
+   max-width: 100%;
+   max-height: 100%;
 
  }
 	.image {
@@ -3782,7 +3782,7 @@ section, summary, time, mark, audio, video {
 
 				.spotlight .image.main {
 					display: block;
-					margin: 0;
+					margin: 10;
 					max-height: 100%;
 					overflow: hidden;
 				}
@@ -4190,8 +4190,7 @@ section, summary, time, mark, audio, video {
 		/* Spotlight */
 
 			.spotlight .image.main {
-        max-width: 80%;
-        max-height: 80%;
+        max-width: 100%;
 			}
 
 			.spotlight .content {
