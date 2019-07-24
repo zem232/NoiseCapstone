@@ -145,7 +145,7 @@ In recent years, the growing volume of noise complaints in New York City has inc
 		</span>
 			<div class="content">
 				<header>
-					<h2>Complaint Response</h2>
+					<h2>The Problem</h2>
 					<p>Noise complaints have increased by 20% since 2014.
 						Enforcement of the noise code has been hampered due to inability to handle sheer volumes.</p>
 				</header>
@@ -164,11 +164,11 @@ In recent years, the growing volume of noise complaints in New York City has inc
 <section id="probStatement" class="wrapper style1 special fade-up">
 		<div class="container" >
 			<header class='major'>
-				<h2>Problem Statement</h2>
-		<h3>The primary motivation of this project is to provide a technological approach to:
+				<h2>The Goal</h2>
+		<h3>The primary motivation of this project is to provide a data-driven approach to:
 		<ul>
-			<li>Reduce the response time to noise complaints</li>
-			<li>Prioritize complaints as to improve enforcement of the noise code</li>
+			<li>1)	Increase efficiency of complaints successfully closed</li>
+			<li>2)	Decrease complaint response times</li>
 		</ul></h3>
 	</header>
 
@@ -176,7 +176,7 @@ In recent years, the growing volume of noise complaints in New York City has inc
 	<header class='major'>
 		<h2>Data Exploration</h2>
 		<div class = 'box-list'>
-			<p>Based off of literature review and discussion with domain experts and our sponsor, we selected the following data sources to explore in relation to noise complaints.
+	<!--		<p>Based off of literature review and discussion with domain experts and our sponsor, we selected the following data sources to explore in relation to noise complaints. -->
 </p></div>
 <!-- Three columns -->
 <div class="row">
@@ -198,36 +198,41 @@ In recent years, the growing volume of noise complaints in New York City has inc
 </div>
 
 <!-- Full-width columns: (hidden by default) -->
-<div id="b1" class="containerTab" style="display:none;background:green">
+<div id="b1" class="containerTab"
+style="display:none;background-image:url(images/pic02.jpg);background-repeat:repeat-y;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>DOB Construction & After-Hour Variance Permits</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+<p>Existing literature found that neighborhood noise complaints are significantly associated with major constructions.
+</br><a href='-	https://www1.nyc.gov/site/buildings/business/how-to-obtain-a-permit.page'>Department of Building’s (DOB) construction permit</a>
+and <a href='-	https://www1.nyc.gov/site/buildings/business/after-hours-variances.page'>After Hour Variance (AHV)</a> were selected as a proxy to construction location and construction noise. DOB permits was found to be a bad proxy for construction noise and noise code enforceability. Sponsors highlighted that the presence of AHV in the vicinity of a noise complaint tend to increase enforceability based on field experience. </p>
 </div>
 
-<div id="b2" class="containerTab" style="display:none;background:blue">
+<div id="b2" class="containerTab" style="display:none;background-image:url(images/pic01.jpg);">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Census Demographic Data</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+<p>High frequency of 311 noise complaints have been found to be positively correlated to Lower Manhattan’s high income and education demographic feature. A geographically weighted regression analysis did not find any relationship between demographic features and ACS Survey and complaint time. </p>
 </div>
 
 <div id="b3" class="containerTab" style="display:none;background:red">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <h2>PLUTO Data</h2>
+  <h2>Land Use Data</h2>
 	<img src="images/Descriptorss.jpeg" alt="" >
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+<p>Land use has been found to affect noise tolerance and noise complaints. Primary Land Use Tax Lot Output (PLUTO) was utilized to obtain New York City’s land use and geographic data at tax lot level. Different types of noise complaints have been found to correspond to various land use types, such as higher percentage of dog barking complaints in residential and public spaces.
+</p>
 </div>
 
 <div id="b4" class="containerTab" style="display:none;background:red">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Weather Data</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
-</div>
+<p>Initial 311 trend analysis revealed that 311 complaints are seasonal, a point that is further corroborated by the sponsors. Temperature, precipitation and snow levels was considered for the project. (insert whatever image you think is relevant)
+</p></div>
 
 <div id="b5" class="containerTab" style="display:none;background:red">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>311 Noise Complaints</h2>
-	<img src="images/Descriptorss.jpeg" alt="" >
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+<img src="images/depnoiseresponse2.png" alt="" />
+<p>311 noise complaints trend analysis revealed that at any given time in 2018 there was 300 to 900 open complaints, and that this is an immense amount of complaints that needs to be solved daily on an inspector workforce comprising of maximum 80 inspectors. The complaints was also highly seasonal.
+</p>
 </div>
 </header>
 <!-- Our Approach  -->
@@ -261,17 +266,21 @@ In recent years, the growing volume of noise complaints in New York City has inc
 
 
 		<section id="lstm" class="spotlight style3 left">
-			<div class="image fit main bottom"><img src="images/LSTM_PIC.png" alt="" ></div>
+			<div id='lstmintro' class="image fit main bottom"><img id='LSTM' src="http://jdeed.info/img/a3.jpg" alt="" ></div>
+			<div id='lstmmodel' class="image fit main bottom"><img id='LSTM' src="http://jdeed.info/img/a3.jpg" alt="" ></div>
+			<div id='lstmresults' class="image fit main bottom"><img id='LSTM' src="http://jdeed.info/img/a3.jpg" alt="" ></div>
 			<div class="content">
 				<header>
 					<h2>Prediction</h2>
 
 					<h3>LSTM Neural Network</h3>
 					<p>A Long short-term memory (LSTM) Neural Network model was developed with 49 spatiotemporal features including
-						weather and after-hour variance permits, as well as 28 autoregressive features.
-						Overall, the NN provided a good estimate of the true standardized mean but failed to capture spikes in complaint variance.
+						weather and after-hour variance permits, as well as 28 autoregressive features.</p>
+						<button onclick="document.getElementById('lstminto').style.display='block'" class="button">Click For More</button>
+				<div id='lstmresults'>
+						<p>Overall, the NN provided a good estimate of the true standardized mean but failed to capture spikes in complaint variance.
 						Our findings suggest that a NN model can learn the baseline volume (including periodicity) of complaints within targeted spatial regions but struggles with predicting specific complaint clusters.
-					</p>
+					</p></div>
 				</header>
 				<ul class="actions">
 					<li><a href="images/lstm.png" class="button">More Results</a></li>
@@ -285,7 +294,9 @@ In recent years, the growing volume of noise complaints in New York City has inc
 			<div class="content">
 				<header>
 					<h2>Optimization</h2>
-					<h3>Clustering with STDBSCAN</h3>
+					<h3>Predicting priority with Random Forest</h3>
+					<h3>Supervised Learning of complaint priority with Random Forest Model</h3>
+
 					<p>To optimize the inspector's response to current backlog of open complaints, we
 						used the ST-DBSCAN method to cluster complaints within fixed temporal and spatial constraints.
 					</br>
@@ -313,47 +324,6 @@ In recent years, the growing volume of noise complaints in New York City has inc
 <a href="#prioritization" class="goto-next scrolly">Next</a>
 
 		</section>
-
-		<!-- Prioritization -->
-
-			<section id="prioritization" class="spotlight style1 bottom">
-				<div class="content">
-
-			<header>
-				<h2>Prioritization</h2>
-				<h3>Supervised Learning of complaint priority with Random Forest Model</h3>
-				<p> </p>
-
-					</header>
-</div>
-<a href="#heatmap" class="goto-next scrolly">Next</a>
-
-		</section>
-
-		<!-- Heatmap  -->
-		<section id="heatmap" class="main style1 dark fullscreen">
-			<div class="content">
-				<header>
-					<h2>Heatmap</h2>
-				</header>
-		<p>Insert image of heatmap originally presented to the sponsors</p>
-			</div>
-			<a href="#clientFeed2" class="goto-next scrolly">Next</a>
-		</section>
-
-
-		<!-- Client Feedback #2  -->
-		<section id="clientFeed2" class="main style1 dark fullscreen">
-			<div class="content">
-				<header>
-					<h2>Sponsor Feedback </h2>
-				</header>
-				<h3>Main comments from sponsor:</h3>
-<p>Insert photos of presentation </p>
-			</div>
-			<a href="#dashboard" class="goto-next scrolly">Next</a>
-		</section>
-
 
 
 		<!-- Dashboard -->

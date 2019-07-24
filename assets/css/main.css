@@ -5,7 +5,7 @@
 .column {
   float: center;
   width: 20%;
-  padding: 50px;
+  margin: 0 auto;
   text-align: center;
   font-size: 20px;
   cursor: pointer;
