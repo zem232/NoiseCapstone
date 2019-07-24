@@ -70,6 +70,19 @@
 /*  height: 930px; /* Should be removed. Only for demonstration */
 }
 
+.nonpinklink {
+  color: #0000EE;
+  font-weight: bold
+}
+
+.leftpad {
+  padding-left: 10px;
+}
+
+.rightpad {
+  padding-right: 10px;
+}
+
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
@@ -184,6 +197,8 @@ section, summary, time, mark, audio, video {
   		color: #e44c65;
   		text-decoration: none;
   	}
+
+
 
   		a:hover {
   			color: #e44c65 !important;
@@ -3494,7 +3509,7 @@ section, summary, time, mark, audio, video {
 			margin: 0;
 			position: fixed;
 			top: 0;
-      background-image: linear-gradient(#5e5656, #a37472);
+      background-image: linear-gradient(#e44c65, #a37472);
       width:30%
 		}
 
@@ -3502,7 +3517,7 @@ section, summary, time, mark, audio, video {
 			position: fixed;
 			right: 0em;
 			top: 0;
-      background-image: linear-gradient(#5e5656, #a37472);
+      background-image: linear-gradient(#e44c65, #a37472);
       width: 70%;
       text-align: right;
 		}

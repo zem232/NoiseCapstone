@@ -21,9 +21,9 @@
 
 		<!-- Header -->
 		<header id="header" class="wrapper style1 special fade-up">
-			<h1 id="logo"><a href="index.html">Optimizing Noise Response</a></h1>
+			<h1 id="logo" class="leftpad"><a href="index.html">Optimizing Noise Response</a></h1>
 			<nav id="nav">
-				<ul>
+				<ul class="rightpad">
 					<li>
 						<a href="#">Background</a>
 						<ul>
@@ -176,7 +176,7 @@ In recent years, the growing volume of noise complaints in New York City has inc
 <!-- Three columns -->
 <div class="row">
   <div class="column" onclick="openTab('b1');" style="background:transparent;">
-    <h3>AHV Construction Permits</h3>
+    <h3>Construction Data</h3>
   </div>
   <div class="column" onclick="openTab('b2');" style="background:transparent;">
 	<h3>Census Demographic</h3>
@@ -198,8 +198,8 @@ style="display:none;background-image:url(images/pic06.jpg);background-repeat:rep
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>DOB Construction & After-Hour Variance Permits</h2>
 <p>Existing literature found that neighborhood noise complaints are significantly associated with major constructions.
-</br><a href='-	https://www1.nyc.gov/site/buildings/business/how-to-obtain-a-permit.page'>Department of Building’s (DOB) construction permit</a>
-and <a href='-	https://www1.nyc.gov/site/buildings/business/after-hours-variances.page'>After Hour Variance (AHV)</a> were selected as a proxy to construction location and construction noise. DOB permits was found to be a bad proxy for construction noise and noise code enforceability. Sponsors highlighted that the presence of AHV in the vicinity of a noise complaint tend to increase enforceability based on field experience. </p>
+</br><a class="nonpinklink" href='-	https://www1.nyc.gov/site/buildings/business/how-to-obtain-a-permit.page'>Department of Building’s (DOB) construction permit</a>
+and <a class="nonpinklink" href='-	https://www1.nyc.gov/site/buildings/business/after-hours-variances.page'>After Hour Variance (AHV)</a> were selected as a proxy to construction location and construction noise. DOB permits was found to be a bad proxy for construction noise and noise code enforceability. Sponsors highlighted that the presence of AHV in the vicinity of a noise complaint tend to increase enforceability based on field experience. </p>
 </div>
 
 <div id="b2" class="containerTab" style="display:none;background-image:url(images/pic07.jpg);">
@@ -296,7 +296,7 @@ and <a href='-	https://www1.nyc.gov/site/buildings/business/after-hours-variance
 			<div id='lstmintro' class="image fit main bottom"><img id='LSTM' src="images/dashboard.gif" alt="" ></div>
 			<div class="content">
 				<header>
-					<h2>Optimization</h2>
+					<h2>Prioritization</h2>
 					<h3>Classifying Priority with Random Forest</h3>
 					<p>We trained a random forest classifier on 311 complaint outcomes from 2016 and tested on July 2019 complaints. A probability score was assigned to each complaint based on its likelihood of enforcement. We optimized for model recall based on sponsor preference.
 					</br>In evaluation, the model precision was 9.3% and recall was 91.1%.</p>
@@ -487,12 +487,9 @@ as well as optimizing future scheduling with prediction.
 		<!-- Footer -->
 		<footer id="footer">
 			<ul class="icons">
-				<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 				<li><a href="https://github.com/sunghoonyang/noise-capstone" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-				<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
-				<li>&copy; Untitled. All rights reserved.</li>
 				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 			</ul>
 		</footer>
